@@ -7,7 +7,7 @@
 import SnapKit
 import UIKit
 
-class FeedViewController: UIViewController {
+final class FeedViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.backgroundColor = .systemBackground
@@ -44,7 +44,7 @@ class FeedViewController: UIViewController {
 
 extension FeedViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        10
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as? FeedTableViewCell
