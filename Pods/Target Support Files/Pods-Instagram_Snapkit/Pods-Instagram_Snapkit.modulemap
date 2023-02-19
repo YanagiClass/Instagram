@@ -1,0 +1,6 @@
+framework module Pods_Instagram_Snapkit {
+  umbrella header "Pods-Instagram_Snapkit-umbrella.h"
+
+  export *
+  module * { export * }
+}
